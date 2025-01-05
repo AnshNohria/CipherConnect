@@ -1,10 +1,9 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Features from './pages/Features';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
+import LandingPage from './pages/LandingPage';
+import CreatorDashboard from './pages/creator/CreatorDashboard';
+import ConsumerDashboard from './pages/consumer/ConsumerDashboard';
 
 function App() {
   return (
@@ -12,11 +11,9 @@ function App() {
       <div className="min-h-screen bg-black text-white">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/creator/*" element={<CreatorDashboard />} />
+          <Route path="/consumer/*" element={<ConsumerDashboard />} />
         </Routes>
       </div>
     </Router>

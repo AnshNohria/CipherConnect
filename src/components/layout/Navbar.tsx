@@ -1,20 +1,9 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Shield, Menu, X, Wallet } from 'lucide-react';
-import { NavLink } from './NavLink';
-
-const navItems = [
-  { path: '/', label: 'Home' },
-  { path: '/about', label: 'About' },
-  { path: '/features', label: 'Features' },
-  { path: '/faq', label: 'FAQ' },
-  { path: '/contact', label: 'Contact' }
-];
+import { Shield, Wallet } from 'lucide-react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <motion.nav 
       initial={{ y: -100 }}
@@ -34,65 +23,17 @@ const Navbar = () => {
               CipherConnect
             </span>
           </Link>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <NavLink key={item.path} to={item.path}>
-                {item.label}
-              </NavLink>
-            ))}
-          </div>
 
-          <div className="flex items-center space-x-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:shadow-glow transition-shadow"
-            >
-              <Wallet className="w-4 h-4" />
-              <span>Connect</span>
-            </motion.button>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? (
-                <X className="w-6 h-6 text-gray-300" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-300" />
-              )}
-            </button>
-          </div>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:shadow-glow transition-shadow"
+          >
+            <Wallet className="w-4 h-4" />
+            <span>Connect</span>
+          </motion.button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-black/90 border-b border-gray-800"
-          >
-            <div className="px-4 py-4 space-y-2">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className="block py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </NavLink>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.nav>
   );
 };
