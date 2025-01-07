@@ -1,28 +1,27 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code, Database, Shield, Users } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code, Database, Shield, Users } from "lucide-react";
 
 const techStack = [
   {
     icon: Shield,
-    title: 'Secure Platform',
-    description: 'Built with security-first approach'
+    title: "Secure Platform",
+    description: "Built with security-first approach",
   },
   {
     icon: Database,
-    title: 'Decentralized Storage',
-    description: 'Content stored across distributed networks'
+    title: "Decentralized Storage",
+    description: "Content stored across distributed networks",
   },
   {
     icon: Code,
-    title: 'Smart Contracts',
-    description: 'Automated content access control'
+    title: "Smart Contracts",
+    description: "Automated content access control",
   },
   {
     icon: Users,
-    title: 'Community Driven',
-    description: 'Built by creators, for creators'
-  }
+    title: "Community Driven",
+    description: "Built by creators, for creators",
+  },
 ];
 
 const About = () => {
@@ -52,8 +51,9 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold text-white">Our Mission</h3>
             <p className="text-gray-400">
-              To revolutionize digital content sharing by providing a secure, private, and 
-              decentralized platform that empowers creators and protects user privacy.
+              To revolutionize digital content sharing by providing a secure,
+              private, and decentralized platform that empowers creators and
+              protects user privacy.
             </p>
           </motion.div>
 
@@ -65,8 +65,9 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold text-white">Our Vision</h3>
             <p className="text-gray-400">
-              A world where content creators have full control over their digital assets,
-              and users can share sensitive information without compromising security.
+              A world where content creators have full control over their
+              digital assets, and users can share sensitive information without
+              compromising security.
             </p>
           </motion.div>
         </div>
@@ -82,7 +83,9 @@ const About = () => {
               className="group p-6 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all"
             >
               <tech.icon className="w-8 h-8 text-purple-500 group-hover:text-pink-500 transition-colors" />
-              <h3 className="mt-4 text-lg font-semibold text-white">{tech.title}</h3>
+              <h3 className="mt-4 text-lg font-semibold text-white">
+                {tech.title}
+              </h3>
               <p className="mt-2 text-sm text-gray-400">{tech.description}</p>
             </motion.div>
           ))}

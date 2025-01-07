@@ -1,14 +1,13 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { Users, Play } from 'lucide-react';
+import { useParams } from "react-router-dom";
+import { Users, Play } from "lucide-react";
 
 const videos = [
   {
     id: 1,
-    title: 'Getting Started with Web3',
-    thumbnail: 'https://images.unsplash.com/photo-1639322537504-6427a16b0a28',
+    title: "Getting Started with Web3",
+    thumbnail: "https://images.unsplash.com/photo-1639322537504-6427a16b0a28",
     views: 12500,
-    duration: '12:34'
+    duration: "12:34",
   },
   // Add more videos...
 ];
@@ -26,7 +25,9 @@ const CreatorProfile = () => {
             className="w-32 h-32 rounded-full object-cover"
           />
           <div>
-            <h1 className="text-3xl font-bold text-white mb-2">Tech Insights</h1>
+            <h1 className="text-3xl font-bold text-white mb-2">
+              Tech Insights
+            </h1>
             <p className="text-gray-400 mb-4">
               Deep dives into the latest technology trends and innovations.
             </p>
@@ -67,7 +68,9 @@ const CreatorProfile = () => {
               <h3 className="text-lg font-semibold text-white group-hover:text-purple-500 transition-colors">
                 {video.title}
               </h3>
-              <p className="text-sm text-gray-400 mt-1">{video.views.toLocaleString()} views</p>
+              <p className="text-sm text-gray-400 mt-1">
+                {video.views.toLocaleString()} views
+              </p>
             </div>
           </div>
         ))}

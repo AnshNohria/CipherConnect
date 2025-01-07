@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Shield, Lock, Key, Wallet } from 'lucide-react';
-import { GradientButton } from '../ui/GradientButton';
+import { motion } from "framer-motion";
+import { Shield, Lock, Key, Wallet } from "lucide-react";
+import { GradientButton } from "../ui/GradientButton";
 
 interface HeroProps {
   onGetStarted: () => void;
@@ -10,24 +9,24 @@ interface HeroProps {
 const features = [
   {
     icon: Shield,
-    title: 'Secure Storage',
-    description: 'End-to-end encryption for maximum security'
+    title: "Secure Storage",
+    description: "End-to-end encryption for maximum security",
   },
   {
     icon: Lock,
-    title: 'Access Control',
-    description: 'Time-based permissions with blockchain'
+    title: "Access Control",
+    description: "Time-based permissions with blockchain",
   },
   {
     icon: Key,
-    title: 'Zero Knowledge',
-    description: 'Complete privacy with encryption'
+    title: "Zero Knowledge",
+    description: "Complete privacy with encryption",
   },
   {
     icon: Wallet,
-    title: 'Fair Revenue',
-    description: 'Direct payments with minimal fees'
-  }
+    title: "Fair Revenue",
+    description: "Direct payments with minimal fees",
+  },
 ];
 
 const Hero = ({ onGetStarted }: HeroProps) => {
@@ -65,7 +64,9 @@ const Hero = ({ onGetStarted }: HeroProps) => {
             className="group p-6 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all"
           >
             <feature.icon className="w-8 h-8 text-purple-500 group-hover:text-pink-500 transition-colors" />
-            <h3 className="mt-4 text-xl font-semibold text-white">{feature.title}</h3>
+            <h3 className="mt-4 text-xl font-semibold text-white">
+              {feature.title}
+            </h3>
             <p className="mt-2 text-gray-400">{feature.description}</p>
           </motion.div>
         ))}

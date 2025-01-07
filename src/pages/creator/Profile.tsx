@@ -1,5 +1,4 @@
-import React from 'react';
-import { Camera } from 'lucide-react';
+import { Camera } from "lucide-react";
 
 const Profile = () => {
   return (
@@ -18,7 +17,7 @@ const Profile = () => {
               <Camera className="w-4 h-4 text-white" />
             </button>
           </div>
-          
+
           <div className="flex-1">
             <input
               type="text"

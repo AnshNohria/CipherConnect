@@ -1,28 +1,27 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Upload, Lock, Key, Download } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Upload, Lock, Key, Download } from "lucide-react";
 
 const steps = [
   {
     icon: Upload,
-    title: 'Upload Content',
-    description: 'Securely upload your content with client-side encryption'
+    title: "Upload Content",
+    description: "Securely upload your content with client-side encryption",
   },
   {
     icon: Lock,
-    title: 'Set Access Rules',
-    description: 'Define who can access your content and for how long'
+    title: "Set Access Rules",
+    description: "Define who can access your content and for how long",
   },
   {
     icon: Key,
-    title: 'Share Securely',
-    description: 'Recipients get secure access through blockchain attestations'
+    title: "Share Securely",
+    description: "Recipients get secure access through blockchain attestations",
   },
   {
     icon: Download,
-    title: 'Access Content',
-    description: 'Authorized users can decrypt and access content seamlessly'
-  }
+    title: "Access Content",
+    description: "Authorized users can decrypt and access content seamlessly",
+  },
 ];
 
 const HowItWorks = () => {
@@ -53,7 +52,9 @@ const HowItWorks = () => {
             >
               <div className="group p-6 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all">
                 <step.icon className="w-8 h-8 text-purple-500 group-hover:text-pink-500 transition-colors" />
-                <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
+                <h3 className="mt-4 text-xl font-semibold text-white">
+                  {step.title}
+                </h3>
                 <p className="mt-2 text-gray-400">{step.description}</p>
               </div>
               {index < steps.length - 1 && (

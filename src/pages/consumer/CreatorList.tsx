@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Users } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Users } from "lucide-react";
 
 const creators = [
   {
     id: 1,
-    name: 'Tech Insights',
-    description: 'Deep dives into the latest technology trends and innovations.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+    name: "Tech Insights",
+    description:
+      "Deep dives into the latest technology trends and innovations.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
     subscribers: 15000,
-    videos: 45
+    videos: 45,
   },
   // Add more creators...
 ];
@@ -20,7 +20,7 @@ const CreatorList = () => {
       <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
         Popular Creators
       </h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {creators.map((creator) => (
           <Link
@@ -44,7 +44,9 @@ const CreatorList = () => {
                 </div>
               </div>
             </div>
-            <p className="mt-4 text-gray-400 line-clamp-2">{creator.description}</p>
+            <p className="mt-4 text-gray-400 line-clamp-2">
+              {creator.description}
+            </p>
           </Link>
         ))}
       </div>

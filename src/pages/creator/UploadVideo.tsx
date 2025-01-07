@@ -1,11 +1,10 @@
-import React from 'react';
-import { Upload, Plus } from 'lucide-react';
+import { Upload, Plus } from "lucide-react";
 
 const UploadVideo = () => {
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold text-white mb-6">Upload Video</h1>
-      
+
       <div className="bg-gray-900 rounded-xl p-8">
         <div className="border-2 border-dashed border-gray-700 rounded-xl p-8 text-center">
           <div className="flex flex-col items-center">
@@ -22,7 +21,7 @@ const UploadVideo = () => {
             </button>
           </div>
         </div>
-        
+
         <div className="mt-8">
           <div className="space-y-4">
             <div>
@@ -35,7 +34,7 @@ const UploadVideo = () => {
                 placeholder="Enter video title"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-400 mb-2">
                 Description
@@ -46,7 +45,7 @@ const UploadVideo = () => {
                 placeholder="Enter video description"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-400 mb-2">
                 Thumbnail
@@ -58,7 +57,7 @@ const UploadVideo = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-8 flex justify-end">
             <button className="bg-purple-500 text-white px-8 py-3 rounded-full hover:bg-purple-600 transition-colors">
               Upload Video

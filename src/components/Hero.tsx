@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Shield, Lock, Key } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Shield, Lock, Key, Wallet } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -18,8 +17,8 @@ const Hero = () => {
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-400">
-              CipherConnect revolutionizes content sharing with end-to-end encryption
-              and blockchain-powered access control.
+              CipherConnect revolutionizes content sharing with end-to-end
+              encryption and blockchain-powered access control.
             </p>
             <div className="mt-8 flex space-x-4">
               <motion.button
@@ -38,7 +37,7 @@ const Hero = () => {
               </motion.button>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -49,10 +48,26 @@ const Hero = () => {
             <div className="relative bg-gray-900 border border-gray-800 rounded-2xl p-8">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { icon: Shield, title: 'Secure Storage', desc: 'End-to-end encryption' },
-                  { icon: Lock, title: 'Access Control', desc: 'Time-based permissions' },
-                  { icon: Key, title: 'Zero Knowledge', desc: 'Complete privacy' },
-                  { icon: Wallet, title: 'Fair Revenue', desc: 'Direct payments' },
+                  {
+                    icon: Shield,
+                    title: "Secure Storage",
+                    desc: "End-to-end encryption",
+                  },
+                  {
+                    icon: Lock,
+                    title: "Access Control",
+                    desc: "Time-based permissions",
+                  },
+                  {
+                    icon: Key,
+                    title: "Zero Knowledge",
+                    desc: "Complete privacy",
+                  },
+                  {
+                    icon: Wallet,
+                    title: "Fair Revenue",
+                    desc: "Direct payments",
+                  },
                 ].map((item, i) => (
                   <motion.div
                     key={i}

@@ -1,9 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import LandingPage from './pages/LandingPage';
-import CreatorDashboard from './pages/creator/CreatorDashboard';
-import ConsumerDashboard from './pages/consumer/ConsumerDashboard';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import LandingPage from "./pages/LandingPage";
+import CreatorDashboard from "./pages/creator/CreatorDashboard";
+import ConsumerDashboard from "./pages/consumer/ConsumerDashboard";
 
 function App() {
   return (

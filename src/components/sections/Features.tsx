@@ -1,38 +1,41 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Shield, Lock, Key, Wallet, Zap, Clock } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Shield, Lock, Key, Wallet, Zap, Clock } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
-    title: 'Secure Storage',
-    description: 'Your content is encrypted before upload and only decrypted by authorized recipients.'
+    title: "Secure Storage",
+    description:
+      "Your content is encrypted before upload and only decrypted by authorized recipients.",
   },
   {
     icon: Lock,
-    title: 'Access Control',
-    description: 'Define precise access rules with blockchain-based attestations.'
+    title: "Access Control",
+    description:
+      "Define precise access rules with blockchain-based attestations.",
   },
   {
     icon: Key,
-    title: 'Zero Knowledge',
-    description: 'Complete privacy with proxy re-encryption technology.'
+    title: "Zero Knowledge",
+    description: "Complete privacy with proxy re-encryption technology.",
   },
   {
     icon: Wallet,
-    title: 'Direct Payments',
-    description: 'Receive payments directly through smart contracts.'
+    title: "Direct Payments",
+    description: "Receive payments directly through smart contracts.",
   },
   {
     icon: Zap,
-    title: 'Instant Delivery',
-    description: 'Lightning-fast content delivery through decentralized networks.'
+    title: "Instant Delivery",
+    description:
+      "Lightning-fast content delivery through decentralized networks.",
   },
   {
     icon: Clock,
-    title: 'Time-Based Access',
-    description: 'Set precise duration for content access with automatic expiration.'
-  }
+    title: "Time-Based Access",
+    description:
+      "Set precise duration for content access with automatic expiration.",
+  },
 ];
 
 const Features = () => {
@@ -61,7 +64,9 @@ const Features = () => {
               className="group p-6 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all"
             >
               <feature.icon className="w-8 h-8 text-purple-500 group-hover:text-pink-500 transition-colors" />
-              <h3 className="mt-4 text-xl font-semibold text-white">{feature.title}</h3>
+              <h3 className="mt-4 text-xl font-semibold text-white">
+                {feature.title}
+              </h3>
               <p className="mt-2 text-gray-400">{feature.description}</p>
             </motion.div>
           ))}

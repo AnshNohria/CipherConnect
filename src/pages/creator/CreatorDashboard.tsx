@@ -1,10 +1,9 @@
-import React from 'react';
-import { Routes, Route, NavLink } from 'react-router-dom';
-import { Layout, Upload, BarChart2, PlaySquare, User } from 'lucide-react';
-import Profile from './Profile';
-import UploadVideo from './UploadVideo';
-import Videos from './Videos';
-import Analytics from './Analytics';
+import { Routes, Route, NavLink } from "react-router-dom";
+import { Layout, Upload, BarChart2, PlaySquare, User } from "lucide-react";
+import Profile from "./Profile";
+import UploadVideo from "./UploadVideo";
+import Videos from "./Videos";
+import Analytics from "./Analytics";
 
 const CreatorDashboard = () => {
   return (
@@ -15,7 +14,9 @@ const CreatorDashboard = () => {
             to="/creator/profile"
             className={({ isActive }) =>
               `flex items-center space-x-2 p-3 rounded-lg transition-colors ${
-                isActive ? 'bg-purple-600/20 text-purple-500' : 'text-gray-400 hover:bg-gray-800'
+                isActive
+                  ? "bg-purple-600/20 text-purple-500"
+                  : "text-gray-400 hover:bg-gray-800"
               }`
             }
           >
@@ -26,7 +27,9 @@ const CreatorDashboard = () => {
             to="/creator/upload"
             className={({ isActive }) =>
               `flex items-center space-x-2 p-3 rounded-lg transition-colors ${
-                isActive ? 'bg-purple-600/20 text-purple-500' : 'text-gray-400 hover:bg-gray-800'
+                isActive
+                  ? "bg-purple-600/20 text-purple-500"
+                  : "text-gray-400 hover:bg-gray-800"
               }`
             }
           >
@@ -37,7 +40,9 @@ const CreatorDashboard = () => {
             to="/creator/videos"
             className={({ isActive }) =>
               `flex items-center space-x-2 p-3 rounded-lg transition-colors ${
-                isActive ? 'bg-purple-600/20 text-purple-500' : 'text-gray-400 hover:bg-gray-800'
+                isActive
+                  ? "bg-purple-600/20 text-purple-500"
+                  : "text-gray-400 hover:bg-gray-800"
               }`
             }
           >
@@ -48,7 +53,9 @@ const CreatorDashboard = () => {
             to="/creator/analytics"
             className={({ isActive }) =>
               `flex items-center space-x-2 p-3 rounded-lg transition-colors ${
-                isActive ? 'bg-purple-600/20 text-purple-500' : 'text-gray-400 hover:bg-gray-800'
+                isActive
+                  ? "bg-purple-600/20 text-purple-500"
+                  : "text-gray-400 hover:bg-gray-800"
               }`
             }
           >
@@ -57,7 +64,7 @@ const CreatorDashboard = () => {
           </NavLink>
         </nav>
       </aside>
-      
+
       <main className="flex-1 overflow-y-auto bg-black p-6">
         <Routes>
           <Route path="profile" element={<Profile />} />

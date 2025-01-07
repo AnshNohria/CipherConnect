@@ -1,11 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Shield, Wallet } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Shield, Wallet } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed w-full bg-black/50 backdrop-blur-lg border-b border-gray-800 z-50"

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Play, MoreVertical } from 'lucide-react';
+import { Play, MoreVertical } from "lucide-react";
 
 const Videos = () => {
   return (
@@ -7,7 +6,10 @@ const Videos = () => {
       <h1 className="text-2xl font-bold text-white mb-6">My Videos</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[1, 2, 3, 4, 5].map((item) => (
-          <div key={item} className="bg-gray-900 rounded-xl overflow-hidden group">
+          <div
+            key={item}
+            className="bg-gray-900 rounded-xl overflow-hidden group"
+          >
             <div className="relative aspect-video">
               <img
                 src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28"
@@ -27,7 +29,9 @@ const Videos = () => {
                   <h3 className="text-lg font-semibold text-white group-hover:text-purple-500 transition-colors">
                     Getting Started with Web3
                   </h3>
-                  <p className="text-sm text-gray-400 mt-1">12.5k views • 2 days ago</p>
+                  <p className="text-sm text-gray-400 mt-1">
+                    12.5k views • 2 days ago
+                  </p>
                 </div>
                 <button className="text-gray-400 hover:text-white">
                   <MoreVertical className="w-5 h-5" />

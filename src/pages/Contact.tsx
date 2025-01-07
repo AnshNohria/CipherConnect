@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Send } from 'lucide-react';
-import { GradientButton } from '../components/ui/GradientButton';
+import { motion } from "framer-motion";
+import { Mail, MessageSquare, Send } from "lucide-react";
+import { GradientButton } from "../components/ui/GradientButton";
 
 const Contact = () => {
   return (
@@ -48,7 +47,10 @@ const Contact = () => {
             className="space-y-6"
           >
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-400">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-400"
+              >
                 Name
               </label>
               <input
@@ -58,7 +60,10 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-400">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-400"
+              >
                 Email
               </label>
               <input
@@ -68,7 +73,10 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-400">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-400"
+              >
                 Message
               </label>
               <textarea

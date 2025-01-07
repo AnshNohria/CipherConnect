@@ -1,11 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Shield, Lock, Wallet } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Shield, Lock, Wallet } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed w-full bg-black/50 backdrop-blur-lg border-b border-gray-800 z-50"
@@ -18,18 +17,30 @@ const Navbar = () => {
               CipherConnect
             </span>
           </Link>
-          
+
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-300 hover:text-purple-500 transition-colors">
+            <Link
+              to="/"
+              className="text-gray-300 hover:text-purple-500 transition-colors"
+            >
               Home
             </Link>
-            <Link to="/features" className="text-gray-300 hover:text-purple-500 transition-colors">
+            <Link
+              to="/features"
+              className="text-gray-300 hover:text-purple-500 transition-colors"
+            >
               Features
             </Link>
-            <Link to="/how-it-works" className="text-gray-300 hover:text-purple-500 transition-colors">
+            <Link
+              to="/how-it-works"
+              className="text-gray-300 hover:text-purple-500 transition-colors"
+            >
               How it Works
             </Link>
-            <Link to="/contact" className="text-gray-300 hover:text-purple-500 transition-colors">
+            <Link
+              to="/contact"
+              className="text-gray-300 hover:text-purple-500 transition-colors"
+            >
               Contact
             </Link>
           </div>

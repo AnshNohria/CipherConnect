@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface NavLinkProps {
   to: string;
@@ -9,7 +8,12 @@ interface NavLinkProps {
   onClick?: () => void;
 }
 
-export const NavLink = ({ to, children, className = '', onClick }: NavLinkProps) => {
+export const NavLink = ({
+  to,
+  children,
+  className = "",
+  onClick,
+}: NavLinkProps) => {
   const location = useLocation();
   const isActive = location.pathname === to;
 

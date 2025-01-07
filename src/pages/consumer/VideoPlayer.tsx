@@ -1,6 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { ThumbsUp, MessageSquare, Share2 } from 'lucide-react';
+import { useParams } from "react-router-dom";
+import { ThumbsUp, MessageSquare, Share2 } from "lucide-react";
 
 const VideoPlayer = () => {
   const { id } = useParams();
@@ -15,11 +14,11 @@ const VideoPlayer = () => {
               Video Player
             </div>
           </div>
-          
+
           <h1 className="text-2xl font-bold text-white mb-4">
             Getting Started with Web3
           </h1>
-          
+
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-4">
               <img
@@ -35,7 +34,7 @@ const VideoPlayer = () => {
                 Subscribe
               </button>
             </div>
-            
+
             <div className="flex items-center space-x-4">
               <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                 <ThumbsUp className="w-5 h-5" />
@@ -47,19 +46,23 @@ const VideoPlayer = () => {
               </button>
             </div>
           </div>
-          
+
           <div className="bg-gray-900 rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">Description</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Description
+            </h3>
             <p className="text-gray-400">
-              In this video, we explore the fundamentals of Web3 technology and how it's
-              revolutionizing the internet. Learn about blockchain, smart contracts, and
-              decentralized applications.
+              In this video, we explore the fundamentals of Web3 technology and
+              how it's revolutionizing the internet. Learn about blockchain,
+              smart contracts, and decentralized applications.
             </p>
           </div>
         </div>
-        
+
         <div className="lg:col-span-1">
-          <h3 className="text-lg font-semibold text-white mb-4">Related Videos</h3>
+          <h3 className="text-lg font-semibold text-white mb-4">
+            Related Videos
+          </h3>
           <div className="space-y-4">
             {[1, 2, 3].map((item) => (
               <div key={item} className="flex space-x-4 cursor-pointer group">

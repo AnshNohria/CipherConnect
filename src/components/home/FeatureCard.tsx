@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
+import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
 
 interface FeatureCardProps {
   icon: LucideIcon;
@@ -10,7 +9,12 @@ interface FeatureCardProps {
   index: number;
 }
 
-export const FeatureCard = ({ icon: Icon, title, description, delay }: FeatureCardProps) => {
+export const FeatureCard = ({
+  icon: Icon,
+  title,
+  description,
+  delay,
+}: FeatureCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

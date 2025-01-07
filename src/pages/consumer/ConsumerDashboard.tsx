@@ -1,8 +1,7 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import CreatorList from './CreatorList';
-import CreatorProfile from './CreatorProfile';
-import VideoPlayer from './VideoPlayer';
+import { Routes, Route } from "react-router-dom";
+import CreatorList from "./CreatorList";
+import CreatorProfile from "./CreatorProfile";
+import VideoPlayer from "./VideoPlayer";
 
 const ConsumerDashboard = () => {
   return (

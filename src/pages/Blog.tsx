@@ -1,29 +1,30 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const posts = [
   {
-    title: 'The Future of Decentralized Content Sharing',
-    excerpt: 'Explore how blockchain technology is revolutionizing content distribution and access control.',
-    date: 'Mar 15, 2024',
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a'
+    title: "The Future of Decentralized Content Sharing",
+    excerpt:
+      "Explore how blockchain technology is revolutionizing content distribution and access control.",
+    date: "Mar 15, 2024",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a",
   },
   {
-    title: 'Understanding Proxy Re-Encryption',
-    excerpt: 'A deep dive into the technology that powers secure content sharing.',
-    date: 'Mar 12, 2024',
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1639322537504-6427a16b0a28'
+    title: "Understanding Proxy Re-Encryption",
+    excerpt:
+      "A deep dive into the technology that powers secure content sharing.",
+    date: "Mar 12, 2024",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1639322537504-6427a16b0a28",
   },
   {
-    title: 'Web3 Privacy: A New Paradigm',
-    excerpt: 'How decentralized technologies are reshaping digital privacy.',
-    date: 'Mar 10, 2024',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1639322537674-e8f5f08c4d89'
-  }
+    title: "Web3 Privacy: A New Paradigm",
+    excerpt: "How decentralized technologies are reshaping digital privacy.",
+    date: "Mar 10, 2024",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1639322537674-e8f5f08c4d89",
+  },
 ];
 
 const Blog = () => {

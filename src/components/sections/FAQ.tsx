@@ -1,24 +1,28 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: 'How does the platform ensure content security?',
-    answer: 'We use end-to-end encryption and proxy re-encryption technology to ensure your content remains secure. Content is encrypted before upload and can only be decrypted by authorized recipients.'
+    question: "How does the platform ensure content security?",
+    answer:
+      "We use end-to-end encryption and proxy re-encryption technology to ensure your content remains secure. Content is encrypted before upload and can only be decrypted by authorized recipients.",
   },
   {
-    question: 'How are content access permissions managed?',
-    answer: 'Access permissions are managed through smart contracts, which specify who can access content and for how long. These permissions are immutable and automatically enforced.'
+    question: "How are content access permissions managed?",
+    answer:
+      "Access permissions are managed through smart contracts, which specify who can access content and for how long. These permissions are immutable and automatically enforced.",
   },
   {
-    question: 'What are the payment options?',
-    answer: 'We support various payment models including pay-per-view, subscriptions, and custom access passes. All payments are processed through smart contracts with minimal fees.'
+    question: "What are the payment options?",
+    answer:
+      "We support various payment models including pay-per-view, subscriptions, and custom access passes. All payments are processed through smart contracts with minimal fees.",
   },
   {
-    question: 'How can I start monetizing my content?',
-    answer: 'Simply upload your content, set your pricing model, and start sharing. Our platform handles all the complexities of content delivery and payment processing.'
-  }
+    question: "How can I start monetizing my content?",
+    answer:
+      "Simply upload your content, set your pricing model, and start sharing. Our platform handles all the complexities of content delivery and payment processing.",
+  },
 ];
 
 const FAQ = () => {
@@ -55,10 +59,12 @@ const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors"
               >
-                <span className="text-lg font-medium text-white">{faq.question}</span>
+                <span className="text-lg font-medium text-white">
+                  {faq.question}
+                </span>
                 <ChevronDown
                   className={`w-5 h-5 text-purple-500 transform transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
+                    openIndex === index ? "rotate-180" : ""
                   }`}
                 />
               </button>
@@ -66,9 +72,9 @@ const FAQ = () => {
                 {openIndex === index && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
+                    animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
+                    transition={{ duration: 0.01 }}
                     className="px-6 py-4 bg-gray-900/30"
                   >
                     <p className="text-gray-400">{faq.answer}</p>

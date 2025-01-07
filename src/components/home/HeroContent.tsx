@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { GradientButton } from '../ui/GradientButton';
+import { motion } from "framer-motion";
+import { GradientButton } from "../ui/GradientButton";
 
 export const HeroContent = () => {
   return (
@@ -29,8 +28,8 @@ export const HeroContent = () => {
         transition={{ delay: 0.2 }}
         className="mt-6 text-xl text-gray-400 max-w-lg"
       >
-        Experience the future of content sharing with end-to-end encryption
-        and blockchain-powered access control.
+        Experience the future of content sharing with end-to-end encryption and
+        blockchain-powered access control.
       </motion.p>
 
       <motion.div
